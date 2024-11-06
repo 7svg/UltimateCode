@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Coding</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Background and Centering */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #6e7ac3, #9c6c85); /* Gradient background */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        /* Container for form */
+        .form-container {
+            background-color: rgba(255, 255, 255, 0.1); /* Slight white background */
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        /* Heading Style */
+        h2 {
+            margin-bottom: 20px;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Input Styles */
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: 0.3s ease;
+        }
+
+        /* Hover Effect for Inputs */
+        input:focus, select:focus {
+            border-color: #9c6c85;
+            outline: none;
+            box-shadow: 0 0 5px rgba(156, 108, 133, 0.6);
+        }
+
+        /* Button Styling */
+        button {
+            width: 100%;
+            padding: 15px;
+            background-color: #9c6c85;
+            color: white;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        /* Button Hover Effect */
+        button:hover {
+            background-color: #7e4c64;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 480px) {
+            .form-container {
+                padding: 20px;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+
+            input, select, button {
+                font-size: 1rem;
+            }
+        }
+
+        /* Adding smooth transitions */
+        input, select, button {
+            transition: all 0.3s ease;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Sign Up</h2>
+        <form id="signupForm" action="https://getform.io/f/anllqqma" method="POST" onsubmit="handleFormSubmit(event)">
+            <input type="text" name="firstName" placeholder="First Name" required />
+            <input type="text" name="lastName" placeholder="Last Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+            <input type="tel" name="phoneNumber" placeholder="Phone Number" required />
+            <input type="password" name="password" placeholder="Password" required />
+            <input type="password" name="confirmPassword" placeholder="Confirm Password" required />
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script>
+        // JavaScript function to handle form submission and redirection
+        function handleFormSubmit(event) {
+            event.preventDefault();  // Prevent the default form submission behavior
+
+            // Send the form data to Getform.io
+            var form = document.getElementById("signupForm");
+            var formData = new FormData(form);
+
+            // Make the POST request to Getform.io
+            fetch(form.action, {
+                method: "POST",
+                body: formData
+            })
+            .then(response => {
+                // If the submission is successful, redirect to the Ultimate Coding page
+                if (response.ok) {
+                    window.location.href = "homepage.html";  // Change to the appropriate URL
+                } else {
+                    alert("Form submission failed. Please try again.");
+                }
+            })
+            .catch(error => {
+                alert("An error occurred: " + error);
+            });
+        }
+    </script>
+</body>
+</html>

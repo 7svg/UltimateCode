@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #fdf7f3;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            background-color: #ff77a9;
+            padding: 10px 0;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffebf0;
+        }
+
+        nav .brand img {
+            width: 120px;
+            vertical-align: middle;
+        }
+
+        nav .brand {
+            font-size: 1.5em;
+            color: white;
+            display: inline-block;
+            margin-right: 30px;
+        }
+
+        /* Rest of the page styles */
+        header {
+            background-color: #ff77a9;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-bottom: 5px solid #ff4081;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 3em;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            animation: bounceIn 1s ease-out;
+        }
+
+        main {
+            padding: 30px;
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            animation: fadeIn 1s ease-out;
+        }
+
+        h2 {
+            color: #ff4081;
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .contact-info li {
+            font-size: 1.2em;
+            margin: 15px 0;
+            background-color: #ffebf0;
+            padding: 10px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .contact-info li:hover {
+            transform: scale(1.05);
+            background-color: #ffddf2;
+        }
+
+        .contact-info a {
+            color: #ff4081;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        .contact-info a:hover {
+            color: #ff77a9;
+        }
+
+        .thank-you-message {
+            background-color: #a4f7c5;
+            color: #2d9b59;
+            padding: 20px;
+            margin-top: 30px;
+            border-radius: 15px;
+            font-size: 1.3em;
+            border: 2px solid #82d2a1;
+            animation: bounceInUp 1s ease-out;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #ff77a9;
+            color: white;
+            font-size: 1em;
+            border-top: 5px solid #ff4081;
+        }
+
+        /* Animations */
+        @keyframes bounceIn {
+            0% { opacity: 0; transform: translateY(-50px); }
+            60% { opacity: 1; transform: translateY(10px); }
+            100% { transform: translateY(0); }
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes bounceInUp {
+            0% { opacity: 0; transform: translateY(50px); }
+            60% { opacity: 1; transform: translateY(-10px); }
+            100% { transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <ul>
+        <li class="brand"><img src="UC_coder.png" alt="Ultimate Coding Logo">Ultimate Coding</li>
+        <li class="link"><a class="linkone" href="homepage.html">Home</a></li>
+        <li class="link"><a class="linktwo" href="html.html">HTML</a></li>
+        <li class="link"><a class="linkthree" href="css.html">CSS</a></li>
+        <li class="link"><a class="linkfour" href="javascript.html">JAVASCRIPT</a></li>
+        <li class="link"><a class="linkfive" href="python.html">PYTHON</a></li>
+        <li class="link" style="color: #fff">|</li>
+        <li class="link"><a class="linkfive" href="versions.html">versions</a></li>
+        <li class="link"><a class="linkfive" style="color: rgb(255, 140, 0);" href="about.html">About</a></li>
+        <li class="link"><a class="linkfive" style="color: rgb(242, 0, 255);" href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <h1>Contact Us</h1>
+</header>
+
+<main>
+    <h2>We’d Love to Hear From You!</h2>
+    <p>If you have any questions, feedback, or just want to say hello, feel free to reach out to us using the contact details below.</p>
+
+    <ul class="contact-info">
+        <li><strong>Name:</strong> Herat Kotecha</li>
+        <li><strong>Email:</strong> <a href="mailto:herat.kotecha@gmail.com">herat.kotecha@gmail.com</a></li>
+        <li><strong>Discord:</strong> <a href="https://discord.com/users/.H3rat%20Gam3r#1530" target="_blank">.H3rat Gam3r#1530</a></li>
+    </ul>
+
+    <!-- Thank You Section -->
+    <div class="thank-you-message">
+        <p>Thank you for reaching out! We’ll get back to you as soon as possible.</p>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2024 Herat Kotecha | All rights reserved</p>
+</footer>
+
+</body>
+</html>

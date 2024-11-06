@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate Coding</title>
+    <link rel="stylesheet" href="python.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header>
+        <nav>
+            <ul>
+                <li class="brand"><img src="UC_coder.png">Ultimate Coding</li>
+                <li class="link"><a class="linkone" href="homepage.html">Home</a> </li>
+                <li class="link"><a class="linktwo" href="html.html">HTML </a> </li>
+                <li class="link"><a class="linkthree" href="css.html"> CSS</a></li>
+                <li class="link"><a class="linkfour" href="javascript.html"> JAVASCRIPT</a></li>
+                <li class="link"><a class="linkfve" href="python.html"> PYTHON</a></li>
+                <li class="link" style="color: #fff">|</li>
+                <li class="link"><a class="linkfive" href="versions.html"> versions</a></li>
+                <li class="link"><a class="linkfive" style="color: rgb(255, 140, 0);" href="about.html"> About</a></li>
+                <li class="link"><a class="linkfive" style="color: rgb(242, 0, 255);" href="contact.html"> Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+        <!-- Header Navigation -->
+    <!-- Tutorials Section -->
+    <section id="tutorials" class="section card">
+        <h2 class="python">What Is Python?</h2>
+        <p class="whatpy">Python is an interpreted, object-oriented, high-level programming language with dynamic semantics. Its high-level built in data structures, combined with dynamic typing and dynamic binding, make it very attractive for Rapid Application Development, as well as for use as a scripting or glue language to connect existing components together. Python's simple, easy to learn syntax emphasizes readability and therefore reduces the cost of program maintenance. Python supports modules and packages, which encourages program modularity and code reuse. The Python interpreter and the extensive standard library are available in source or binary form without charge for all major platforms, and can be freely distributed.</p>
+    </section>
+
+    <!-- Examples Section -->
+    <section id="examples" class="section card">
+        <h2>Python Examples</h2>
+        <p>Test your skills with interactive examples!</p>
+        <div class="example">
+            <h3>Example 1: Hello World</h3>
+            <pre><code>print("Hello, World!")</code></pre>
+            <button onclick="runExample1()">Run Example</button>
+        </div>
+        <div class="example">
+            <h3>Example 2: Simple Calculator</h3>
+            <pre><code>
+def add(a, b):
+    return a + b
+
+print(add(5, 3))
+            </code></pre>
+            <button onclick="runExample2()">Run Example</button>
+        </div>
+    </section>
+
+    <h2 class="ffpy">FUN FACTS ABOUT PYTHON!</h2>
+
+    <!-- Fun Fact Section -->
+    <style>
+        /* Container to hold all the boxes */
+        .container {
+            display: flex;
+            justify-content: center; /* Centers the boxes horizontally */
+            align-items: center; /* Centers the boxes vertically */
+            margin-top: 100px;
+        }
+
+        /* General style for the boxes */
+        .square-box, .square-boxtwo, .square-boxthree {
+            border: 2px solid #000;
+            padding: 20px;
+            width: 200px;
+            height: 200px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: #2494c9;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            border-radius: 50%; /* Fully round the boxes */
+            margin: 0 10px;
+        }
+
+
+    </style>
+      <div class="container">
+        <div class="square-box">
+            Python was created by Guido van Rossum, and first released on February 20, 1991.
+        </div>
+
+        <div class="square-boxtwo">
+            Python is named after the comedy show Monty Python's Flying Circus.
+        </div>
+
+        <div class="square-boxthree">
+            Python is used by big companies like Google, NASA for a variety of applications.
+        </div>
+    </div>
+
+    <!-- Quizzes Section -->
+    <section id="quizzes" class="section card">
+        <h1>Python Quizzes</h1>
+        <form>
+            <label>What is the output of `print(2 + 3)`?</label><br>
+            <input type="radio" name="quiz1" value="a"> 2<br>
+            <input type="radio" name="quiz1" value="b"> 5<br>
+            <input type="radio" name="quiz1" value="c"> 23<br><br>
+            
+            <label>What does `len()` function do in Python?</label><br>
+            <input type="radio" name="quiz2" value="a"> Returns length of an object<br>
+            <input type="radio" name="quiz2" value="b"> Creates a list<br><br>
+            
+            <button type="submit">Submit Answers</button>
+        </form>
+    </section>
+
+    <!-- Resources Section -->
+    <section id="resources" class="section card">
+        <h2>Further Resources</h2>
+        <ul>
+            <li><a href="https://docs.python.org/3/">Official Python Documentation</a></li>
+            <li><a href="https://realpython.com/">Real Python Tutorials</a></li>
+            <li><a href="https://www.learnpython.org/">Learn Python - Interactive Python Tutorials</a></li>
+        </ul>
+    </section>
+
+    <!-- Forum Section -->
+    <section id="forum" class="section card">
+        <h2>Python Discussion Forum</h2>
+        <p>Join the community and ask questions about Python programming!</p>
+        <form>
+            <textarea placeholder="Ask your question here"></textarea><br>
+            <button type="submit">Submit Question</button>
+        </form>
+    </section>
+    <h2 style="font-size: 20px; color: rgb(255, 0, 0);">(Okay, this page is different than the others because I have created this page after literally 2 years so there is a huge difference, by the way if you like this style please <a href="contact.html" style="color: aquamarine;">contact me</a>.)</h2>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Learn Python. All rights reserved.</p>
+    </footer>
+    
+    <script src="python.js"></script>
+</body>
+</html>
